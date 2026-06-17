@@ -1,100 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>Valentine Card</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pulkit Apology</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: "Georgia", serif;
+      background: linear-gradient(135deg, #fdfbfb, #ebedee);
+      overflow: hidden;
+    }
+
+    .container {
+      text-align: center;
+    }
+
+    .btn {
+      padding: 16px 32px;
+      font-size: 1.1rem;
+      border: none;
+      border-radius: 999px;
+      cursor: pointer;
+      background: linear-gradient(135deg, #ff758c, #ff7eb3);
+      color: white;
+      box-shadow: 0 10px 30px rgba(255, 118, 140, 0.3);
+      transition: transform 0.2s ease;
+    }
+
+    .btn:hover {
+      transform: scale(1.05);
+    }
+
+    .message {
+      display: none;
+      max-width: 700px;
+      margin-top: 40px;
+      padding: 30px;
+      background: rgba(255, 255, 255, 0.9);
+      border-radius: 20px;
+      box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
+      animation: fadeIn 1s ease forwards;
+    }
+
+    .quote {
+      font-size: 2rem;
+      line-height: 1.6;
+      color: #444;
+      font-style: italic;
+    }
+
+    .signature {
+      margin-top: 20px;
+      font-size: 1.2rem;
+      color: #888;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .heart {
+      font-size: 2rem;
+      margin-bottom: 15px;
+    }
+  </style>
 </head>
+<body>
+  <div class="container">
+    <button class="btn" onclick="showApology()">
+      Click for Pulkit Apology
+    </button>
 
-<body style="
-    margin:0;
-    height:100vh;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    background:linear-gradient(135deg,#ff9ecb,#ff5fa2);
-    font-family: 'Segoe UI', sans-serif;
-">
+    <div class="message" id="apology">
+      <div class="heart">❤️</div>
 
-<div style="
-    background:white;
-    width:500px;
-    padding:40px;
-    max-height: 80%;
-    overflow: auto;
-    border-radius:20px;
-    text-align:center;
-    box-shadow:0 15px 40px rgba(0,0,0,0.2);
-">
+      <div class="quote">
+        “If the world is a journey, I am a lost passenger without you,
+        so sorry Arushi.”
+      </div>
 
-    <h1 style="
-        color:#ff2e78;
-        margin-bottom:10px;
-        font-size:32px;
-    ">
-        💖 Happy Valentine's Day 💖
-    </h1>
-
-    <p style="
-        font-size:12px;
-        color:#555;
-        margin-top:20px;
-    ">
-        To<br>
-        the girl<br>
-        who made my life worthwhile<br>
-        now becomes my reason to smile<br>
-<br>
-        To<br>
-        the girl<br>
-        who is pretty, witty and wise<br>
-        sometimes a lil grumpy<br>
-        but a true gem I realise<br>
-<br>
-        To<br>
-        the girl<br>
-        I'd always fight<br>
-        Now<br>
-        I'll do anything to keep her in my sight<br>
-<br>
-        To<br>
-        the girl<br>
-        who is ambitious, brave
-        never says never<br>
-        May<br>
-        these fleeting moments with her last forever<br>
-<br>
-        To<br>
-        the girl<br>
-        who gave me a right swipe :)<br>
-        I would do anything to<br>
-        be her type...<br>
-        <br>
-        To<br>
-        the girl<br>
-        who is my best friend<br>
-        I get it<br>
-        but it could be different if you let it....<br>
-        
-       
-    </p>
-
-    <p style="
-        font-size:18px;
-        color:#ff2e78;
-        font-weight:bold;
-        margin-top:25px;
-    ">
-        Someone Special Forever 💕
-    </p>
-
-    <div style="
-        font-size:40px;
-        margin-top:20px;
-    ">
-        💝 💕 💖
+      <div class="signature">
+        — Pulkit
+      </div>
     </div>
+  </div>
 
-</div>
-
+  <script>
+    function showApology() {
+      document.getElementById("apology").style.display = "block";
+    }
+  </script>
 </body>
 </html>
