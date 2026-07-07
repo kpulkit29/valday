@@ -1,111 +1,251 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Pulkit Apology</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <style>
-    * {
-      box-sizing: border-box;
-    }
+<title>For Arushi ❤️</title>
 
-    body {
-      margin: 0;
-      height: 100vh;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      font-family: "Georgia", serif;
-      background: linear-gradient(135deg, #fdfbfb, #ebedee);
-      overflow: hidden;
-    }
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600&family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
 
-    .container {
-      text-align: center;
-    }
+<style>
 
-    .btn {
-      padding: 16px 32px;
-      font-size: 1.1rem;
-      border: none;
-      border-radius: 999px;
-      cursor: pointer;
-      background: linear-gradient(135deg, #ff758c, #ff7eb3);
-      color: white;
-      box-shadow: 0 10px 30px rgba(255, 118, 140, 0.3);
-      transition: transform 0.2s ease;
-    }
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
 
-    .btn:hover {
-      transform: scale(1.05);
-    }
+body{
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+background:linear-gradient(-45deg,#ffdde1,#ee9ca7,#fad0c4,#ffd1ff);
+background-size:400% 400%;
+animation:bg 12s ease infinite;
+overflow:hidden;
+font-family:'Cormorant Garamond',serif;
+}
 
-    .message {
-      display: none;
-      max-width: 700px;
-      margin-top: 40px;
-      padding: 30px;
-      background: rgba(255, 255, 255, 0.9);
-      border-radius: 20px;
-      box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
-      animation: fadeIn 1s ease forwards;
-    }
+@keyframes bg{
+0%{background-position:0% 50%;}
+50%{background-position:100% 50%;}
+100%{background-position:0% 50%;}
+}
 
-    .quote {
-      font-size: 2rem;
-      line-height: 1.6;
-      color: #444;
-      font-style: italic;
-    }
+.container{
+text-align:center;
+}
 
-    .signature {
-      margin-top: 20px;
-      font-size: 1.2rem;
-      color: #888;
-    }
+button{
 
-    @keyframes fadeIn {
-      from {
-        opacity: 0;
-        transform: translateY(20px);
-      }
-      to {
-        opacity: 1;
-        transform: translateY(0);
-      }
-    }
+padding:18px 40px;
+font-size:20px;
+border:none;
+cursor:pointer;
+border-radius:60px;
+background:#ff4d79;
+color:white;
+font-weight:bold;
+box-shadow:0 15px 35px rgba(255,77,121,.4);
+transition:.35s;
+}
 
-    .heart {
-      font-size: 2rem;
-      margin-bottom: 15px;
-    }
-  </style>
+button:hover{
+transform:translateY(-5px) scale(1.05);
+box-shadow:0 20px 45px rgba(255,77,121,.6);
+}
+
+.card{
+
+display:none;
+margin-top:40px;
+width:min(750px,90vw);
+
+padding:60px 50px;
+
+border-radius:30px;
+
+background:rgba(255,255,255,.22);
+
+backdrop-filter:blur(20px);
+
+border:1px solid rgba(255,255,255,.4);
+
+box-shadow:0 25px 60px rgba(0,0,0,.15);
+
+animation:fade .8s ease;
+}
+
+@keyframes fade{
+from{
+opacity:0;
+transform:translateY(40px);
+}
+to{
+opacity:1;
+transform:translateY(0);
+}
+}
+
+.title{
+
+font-family:'Dancing Script',cursive;
+font-size:65px;
+color:#d6336c;
+margin-bottom:25px;
+}
+
+.line{
+
+font-size:34px;
+line-height:1.8;
+color:#444;
+margin:18px 0;
+}
+
+.highlight{
+
+font-family:'Dancing Script',cursive;
+font-size:48px;
+display:block;
+color:#e91e63;
+margin-top:8px;
+}
+
+.footer{
+
+margin-top:40px;
+font-size:30px;
+color:#777;
+font-style:italic;
+}
+
+.heart{
+
+position:absolute;
+font-size:25px;
+animation:float 10s linear infinite;
+opacity:.6;
+}
+
+@keyframes float{
+
+from{
+transform:translateY(100vh) rotate(0deg);
+}
+
+to{
+transform:translateY(-120vh) rotate(360deg);
+}
+
+}
+
+.cursor{
+
+display:inline-block;
+width:2px;
+height:35px;
+background:#d6336c;
+animation:blink .8s infinite;
+}
+
+@keyframes blink{
+50%{
+opacity:0;
+}
+}
+
+</style>
 </head>
+
 <body>
-  <div class="container">
-    <button class="btn" onclick="showApology()">
-      Click for Pulkit Apology
-    </button>
 
-    <div class="message" id="apology">
-      <div class="heart">❤️</div>
+<div class="heart" style="left:8%;animation-delay:0s;">❤️</div>
+<div class="heart" style="left:22%;animation-delay:2s;">💕</div>
+<div class="heart" style="left:40%;animation-delay:5s;">💖</div>
+<div class="heart" style="left:65%;animation-delay:1s;">❤️</div>
+<div class="heart" style="left:82%;animation-delay:4s;">💗</div>
 
-      <div class="quote">
-        “If the world is a journey, I am a lost passenger without you,
-        so sorry Arushi.”
-      </div>
+<div class="container">
 
-      <div class="signature">
-        — Pulkit
-      </div>
-    </div>
-  </div>
+<button onclick="showCard()">
+Open My Heart ❤️
+</button>
 
-  <script>
-    function showApology() {
-      document.getElementById("apology").style.display = "block";
-    }
-  </script>
+<div class="card" id="card">
+
+<div class="title">
+Hey Arushi ❤️
+</div>
+
+<div id="text"></div>
+
+<div class="footer">
+— Pulkit
+</div>
+
+</div>
+
+</div>
+
+<script>
+
+const message = [
+
+'I thank God every single day for...',
+
+'<span class="highlight">the girl He sent my way.</span>',
+
+'When you are mad...',
+
+'<span class="highlight">it hits like a missile. 🚀😂</span>',
+
+'But even then...',
+
+'<span class="highlight">nothing is bigger than your smile. ❤️</span>',
+
+'And if I could ask for just one thing...',
+
+'<span class="highlight">it would be to keep that smile forever.</span>'
+
+];
+
+function showCard(){
+
+document.querySelector("button").style.display="none";
+
+document.getElementById("card").style.display="block";
+
+let i=0;
+
+const container=document.getElementById("text");
+
+function next(){
+
+if(i===message.length) return;
+
+const p=document.createElement("div");
+
+p.className="line";
+
+p.innerHTML=message[i];
+
+container.appendChild(p);
+
+i++;
+
+setTimeout(next,1200);
+
+}
+
+next();
+
+}
+
+</script>
+
 </body>
 </html>
